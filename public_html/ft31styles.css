@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.11.2017, 17:06:43
+    Author     : cboeg
+*/
+
+/*Tag Styles*/
+
+/* Grundschriftart für alles auf dieser Seite */
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%; //Grundgröße (siehe Schrödinger 2016, S. 142. Browsergrundgröße ist gemeinhin 16px, macht hier also 10px)
+}
+
+/* Klassen */
+
+.gelbhinterlegt {
+    color: #5b5a59; 
+    background-color: yellow;
+}
+
+.kommentar {
+    color: #5a5a5a;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu'; /*Klasse als Formatvorlage. Siehe unten "gleiche" ID*/
+}
+
+.TransparenterKasten {
+    background-color: rgba(255,155,0,0.5);
+    color: #ff0000;
+    border-color: #1a0aff;       
+}
+/*Farbenspiele (Schrödinger S. 115))*/
+.haloween {
+    background-image: url(images/oralauf2.png);
+    background-repeat: repeat-Y;
+} 
+.WeisseSchriftTransparent {
+    color: #ffffff;
+    background-color:rgba(255, 255, 255, 0.5);
+    font-size: 20px;       
+}
+
+/*Marodierende Bilder (Schrödinger 2016, S. 121ff)*/
+
+.MarodierendeBilder {
+    background-color: grey;
+    background-image: url(images/schwellwerk.png);
+    /*background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;*/
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   }
+   .MarodierendeBilderInEins {
+       background: gray url(images/schwellwerk.png) no-repeat fixed center top;
+   }
+   
+/*Pixel, Punkt und EM (Schrödinger 2016, S. 138ff)*/
+.EtwasGrösserAlsDasAndere {
+    font-size: 1.2em;
+}
+
+/*Nachfahrenselektoren (Schrödinger 2016, S. 143ff)*/
+
+ h2 .EtwasGrösserAlsDasAndere { 
+    font-weight: bold;
+    font-style: italic;
+}
+
+p > span {
+    font-family: Helvetica;
+    font-style: italic; 
+    color: red;
+}
+
+h2 + p {
+    font-size: 2em;
+    font-weight: bolder;
+    color: blue;
+}
+
+h2 ~ em {
+    font-size: 3em;
+        
+}
+
+/*Listen, römisch, katholisch, rückwärtsgewandt, nicht bei eins anfangen*/
+
+ol.roemisch {
+    list-style-type: upper-roman;
+}
+ol.roemisch > ol > li {
+    list-style-type: lower-roman;
+}
+
+/* Ids - dürfen auf der Seite nur einmal vorkommen */
+
+#ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}

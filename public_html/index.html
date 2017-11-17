@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Schrödinger nachgemacht</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontface, der Einfachheit haber zunächst mit Einbettung von Google api -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+        <link href="ft31styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <p class="kommentar">Das ist der Header</p>
+            <div>Hallo FT31</div>
+        </header>
+        
+        <nav>
+            <h1>Navigationsbereich</h1>
+            <a href="#Teil1">Zu den ersten Versuchen</a>
+            <a href="Farbenlehre.html">Übungsseite Farbenlehre</a>
+            <a href="BilderPositionieren.html">Marodierende Bilder</a>
+            <a href="NachfahrenSelektoren.html">Nachfahrenselektoren</a>
+            <a href="Listen.html">Listen</a>
+        </nav>
+        
+        <h1 id="Teil1">Schrödinger nachgemacht</h1>
+        <h2>Span</h2>
+        <span class="gelbhinterlegt">
+            Das ist ein Span-Text, mit CSS formatiert wie bei Schrödinger 2016, S. 94 beschrieben
+        </span>
+        <h2>Google Fonts, <code>Tag-Definitionen in CSS</code> und IDs</h2>
+        <p>
+            Das ist ein normal, wie in CSS für den Body definierter, formatierter Text.
+        </p>
+        <p id="ubuntu">
+            Hier sollte der Text in "Ubuntu" formatiert erscheinen, da in CSS ein 
+            <code>#ubuntu</code> definiert wurde. IDs sollen laut Schrödinger, 
+            S. 102 (oder irgendwo da in der Nähe) nur einmalig auf der Seite benutzt werden
+            Für "Formatvorlagen" sollten Klassen verwendet werden.
+        </p>
+        <h2>Mehrere Klassen kombinieren</h2>
+        <p>
+            Im folgenden Text werden die Klassen <code>.ubuntu</code> und 
+            <code>.gelbhinterlegt</code> in Kombination genutzt. Eintrag ohne Komma oder Semikolon <code> class="gelbhinterlegt ubuntu"</code>
+            :</p>
+        <p class="gelbhinterlegt ubuntu">
+            Das hier ist ein gelb hinterlegtes Ubuntu.
+        </p>
+        <h2>rgba</h2>
+        <p>
+            Das RGBA-Modell ist eine Erweiterung des RGB-Farbschemas. Das "A" steht für "Opacity" (Transparenz).
+        </p>
+        <p class="TransparenterKasten">
+            Das hier ist ein Kasten mit halb transparentem Hintergrund, formatiert mit css <code>rgba(255,155,0,0.5);</code>
+        </p>
+        <h2>Punkt, Pixel und em</h2>
+        <p>
+            Punkt und Pixel sind absolute Angaben, besipielsweise für die 
+            Schriftgröße - also 12pt für die Standardgröße von Times New Roman.
+            Das kann allerdings bei Sehbehinderten selbst bei der Einstellung von
+            Vergrößerungen dazu führen, dass die Schriftart immer gleich groß
+            angezeigt wird. Daher setzt man am besten gleich
+            auf HTML-Ebene die Schriftart auf 10px (oder eine prozentuale Umrechnng von der 
+            Borser-Standard-Schriftgröße) fest. 1.2em bewirkt dann eine
+            <span class="EtwasGrösserAlsDasAndere">Vergrößerung um 120% = 12pt;</span>
+            160% sind 16pt usw.
+        </p>
+    </body>
+</html>

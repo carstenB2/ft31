@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nachfahrenselektoren</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontface, der Einfachheit haber zunächst mit Einbettung von Google api -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+        <link href="ft31styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <h1>Nachfahren</h1>
+    <p>
+        Hier kommt es nun endlich: Die im
+        <a href="../../../../../../D:/Carsten/Dropbox/Entwicklung/MDNBeispiele/MDNExamples/public_html/index.html">MDN-Tutorial</a> 
+        unverstandenen Nachfahrenselktoren.
+    </p>
+    <h2>Ein Wort <span class="EtwasGrösserAlsDasAndere">größer und fett</span> machen - aber nur in Überschriften</h2>
+    <p>
+        Das geht so:
+    </p>
+    <p>
+        <code>
+            .EtwasGrösserAlsDasAndere {</br>
+            font-size: 1.2em;</br>
+        }</br>
+
+        h2 .EtwasGrösserAlsDasAndere { //nur in H1 und H2 auch fett</br>
+            font-weight: bold;</br>
+        }</br>
+        </code>
+    </p>
+    <h2>Der Selektor mit dem <code>+ und ></code>, der <span class="EtwasGrösserAlsDasAndere">erste</span> und alle anderen</h2>
+    <p>
+        Dieser erste Absatz ist gleichermaßen groß (+ Selektor zieht den ersten
+            ) <span>und rot (> -Selektor für alle direkt nachfolgenden Elemente)</span>
+    </p>
+    <p>
+       Den Plus-Selektor kann man gut dazu verwenden, Leadtexte nach einer
+       Überschrift <span>automatisch</span> zu formatieren
+    </p>
+    <p>
+        Der zweite Absatz wird dann normal formatiert, es sei denn man, man nimmt
+        <span>den Pfeil</span> Dann werden auch alle <em>anderen</em> Elemente in den folgenden
+        Absätzen entsprechend formatiert (hier span).
+    </p>
+    <section>
+        <p>
+            Das ist nun ein mit <em>weiterer</em> Absatz innerhalb einer 
+            Section.
+        </p>
+    </section> 
+        
+    </body>
+</html>

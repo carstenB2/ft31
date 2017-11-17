@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Schrödinger nachgemacht</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontface, der Einfachheit haber zunächst mit Einbettung von Google api -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+        <link href="ft31styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>Listen</div>
+        <h1>Listen bauen</h1>
+        Das macht man am besten wieder in Stylsheets klar. Hier eine römische Variante:
+        <ol class="roemisch">
+            <li>Erstens</li>
+            <li>Zweitens</li>
+            <li>Drittens</li>
+        </ol>
+        <p>
+            Schreibt man etwas zwischendrin und will danach weiterzählen, kann
+            man im HTML selbst den Neustart festlegen.
+        </p>
+        <ol class="roemisch" start="4">
+            <li class="roemisch">viertens</li>
+            <ol>
+                <li>vier-a-tenst</li>
+                <li>vier-b-tenst</li>
+            </ol>
+            <li>fünftens</li>
+            </ol>
+            
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+     <head>
+        <title>Farbenlehre</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontface, der Einfachheit haber zunächst mit Einbettung von Google api -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+        <link href="ft31styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="haloween">
+        <header>
+            <p>Das ist der Header</p>
+            <div>Hallo Farbe
+                
+            </div>
+        </header>
+        <nav>
+            Navigationsbereich
+        </nav>
+        <p class="WeisseSchriftTransparent">
+            Dieses Beispiel zeigt verschiedene Möglichkeiten, 
+            Transparenz zu erzeugen. Die weiße Schrift steckt
+            in einem Kasten der mit <code>background-color:rgba(255, 255, 255, 0.5);</code>
+            formatiert ist.
+         </p>
+         
+         <p>
+             Farbverläufe kann man komplizierten Gradient-Klauseln oder
+             man benutzt, wie hier geschehen, mit Grafiken. Im Beispiel ist die 
+             verwendete Grafik 1px hoch und 2000px breit und durch GIMP
+             mit einem Farbverlauf ausgestattet worden. Das ganze ist
+             dann mit
+             <code>
+                 .haloween {</br>
+                    background-image: url(images/oralauf2.png);</br>
+                    background-repeat: repeat-Y;</br>
+                    } </br>
+             </code>
+             formatiert worden (vgl. Schrödinger 2016, S. 115ff.
+         </p>
+    </body>
+</html>
