@@ -101,6 +101,32 @@ ol.roemisch > ol > li {
     list-style-type: lower-roman;
 }
 
+/*Tabellenregeln*/
+spalte1 {
+    text-align: right;
+    width: 100px;
+}
+
+spalte2, spalte3  {
+    width: 200px;
+}
+
+spalte4 {
+    width: 400px;
+}
+
+tr {
+    border: 2px solid black;
+}
+thead tr {
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}
+
+td {
+    border: solid green;
+}
+
 /* Ids - dürfen auf der Seite nur einmal vorkommen */
 
 #ubuntu {

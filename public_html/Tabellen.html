@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   <head>
+        <title>Tabellen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontface, der Einfachheit haber zunächst mit Einbettung von Google api -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+        <link href="ft31styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>Schrödinger-Beispiele für Tabellen</div>
+        
+        <table>
+            <caption>Tabellenüberschrift</caption>
+            <colgroup>
+                <col class="spalte1">
+                <col class="spalte2">
+                <col class="spalte3">
+                <col class="spalte4">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Spaltenkopf 1</th>
+                    <th scope="col">Spaltenkopf 2</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Spaltenfuß 1</td>
+                    <td>Spaltenfuß 2</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <th scope="row">Kreuztabellenzeile 1</th>
+                    <td>Zellinhalt 1, Zellinhalt2</td>
+                    <td>Zellinhalt 3</td>
+                </tr>
+            </tbody>
+        </table>
+        
+            
+    </body>
+</html>
