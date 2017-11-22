@@ -15,6 +15,12 @@ and open the template in the editor.
     </head>
     <body>
         <div>Schrödinger-Beispiele für Tabellen</div>
+        <P>
+            Hier zunächst das aufgebohrte Schrödinger-Beispiel von S. 193. Das funktioniert allerdings nicht wirklich gut,
+            da vieles unerklärt bleibt.
+            So funktioniert beispielsweise die Rahmenformatierung noch nicht, möglicherweise
+            wegen COL und Konsorten
+        </P>
         
         <table>
             <caption>Tabellenüberschrift</caption>
@@ -45,6 +51,43 @@ and open the template in the editor.
             </tbody>
         </table>
         
+        <p>
+            Hier nun ein neuer Versuch mit einem praktischen Beispiel: Einer Terminliste
+            für die Bachkantorei:
+        </p>
+        
+        <table>
+            <caption>Die nächsten Termine der Bachkantorei</caption>
+<!--            COLGROUP machen wir jetzt mal nicht-->
+        <thead>
+            <tr>
+                <th scope="col">Datum</th>
+                <th scope="col">Uhrzeit</th>
+                <th scope="col">Termin</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                
+                <td colspan="3">www.bachkantorei.de</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+            <th scope="row">16.12.2017</th>
+                
+                    <td>10:00</td>
+                    <td>Aufbau Kirche und Saal. Essen und Getränke: Bratenbrötchen, Bier, Wein, Saft</td>
+            </tr>
+            <tr>
+            <th scope="row">18.12.2017</th>
+            
+                <td>18:00</td>
+                <td>Abbau Bühne, Räumung Saal</td>
+            </tr>
+        
+        </tbody>
+        </table>
             
     </body>
 </html>

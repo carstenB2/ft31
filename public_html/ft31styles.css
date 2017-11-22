@@ -102,6 +102,9 @@ ol.roemisch > ol > li {
 }
 
 /*Tabellenregeln*/
+table {
+    border-collapse: collapse;
+}
 spalte1 {
     text-align: right;
     width: 100px;
@@ -123,10 +126,25 @@ thead tr {
     border-bottom: 2px solid red;
 }
 
-td {
-    border: solid green;
+tfoot td{
+    text-align: center;
 }
 
+td {
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #c8c8c8
+}
+
+tr:nth-child(odd) {
+    background-color: #fafafa
+}
 /* Ids - dürfen auf der Seite nur einmal vorkommen */
 
 #ubuntu {
