@@ -145,6 +145,11 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #fafafa
 }
+/* Formulare */
+
+.Formularliste li {
+    list-style-type: none;
+}
 /* Ids - dürfen auf der Seite nur einmal vorkommen */
 
 #ubuntu {

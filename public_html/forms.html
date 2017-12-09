@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tabellen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontface, der Einfachheit haber zunächst mit Einbettung von Google api -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+        <link href="ft31styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>Formulare --> Schrödinger 2016, S. 210ff</div>
+        <p>Damit das funktioniert, müssen die Sourcen von den Schrödingr
+            Buchbeispielen vorhanden sein. In deiesem Übungsprojekt wurde das Unterverzeichnis <code>
+                forms</code> angelegt. Das Original-ZIP fndet sich in
+                <code>c:\xampp\htdocs\ft31\Sourcen\Downloads\</code>,
+            je nachdem, auf welcher Maschine gerade gearbeitet wird.
+        </p>
+        <p>
+            Am Anfang war das <code>forms</code>-Tag - also zum Beispiel:
+            <code>form action="http://localhost:8080/ft31/public_html/forms/hallowelt.php" method="get" accept-charset="utf-8"</code>
+        </p>
+        <p>
+            Danach kommt alles, wie es kommen musss wie auf SSchrödinger 2016 audf S. 312ff beschrieben.
+            Zu beachten ist allerdings, dass im speziellen FT31-Fall hier "action" die komplette
+            URL einzugeben ist, also:
+        </p>
+        
+        <ul>
+            <li>
+                <code>http://localhost:8080/ft31/public_html/forms/hallowelt.php></code>
+            </li>
+        </ul>
+        
+                
+       
+        
+        <p>    
+            Und los geht's
+        </p>
+        <form action="http://localhost:8080/ft31/public_html/forms/hallowelt.php" method="get" accept-charset="utf-8">
+            <ul class="Formularliste">
+                <li><label for="name">Namen eingeben</label></li>
+                <li><input type="text" name="name" id='name' placeholder="Name"></li>
+                <li><input type="text" name="nachname" placeholder="Nachname"></li>
+                <li><input type="text" name="spitzname" placeholder="Spitzname"></li>
+                <li><button>Abschicken</button></li>
+                <li><button type="reset"> Formular leeren</button></li>
+            </ul>
+            
+        </form>   
+</html>
