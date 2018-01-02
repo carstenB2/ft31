@@ -1,0 +1,37 @@
+= Historie der GIT-Vorgänge =
+
+Dieses Verzeichnis wurde aus FT31Lobby C:\XAMPP\HTDOCS\ft31 aus dem dort angelegten Repository geklont.
+
+Microsoft Windows [Version 10.0.16299.125]
+(c) 2017 Microsoft Corporation. Alle Rechte vorbehalten.
+
+C:\Users\Carsten>cd..
+
+C:\Users>cd..
+
+C:\>cd XAMPP
+
+C:\xampp>cd htdocs
+
+C:\xampp\htdocs>cd ft31
+
+C:\xampp\htdocs\ft31>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\xampp\htdocs\ft31>.bowerrc
+
+C:\xampp\htdocs\ft31>F:
+
+F:\>git clone C:\xampp\htdocs\ft31.git
+Cloning into 'ft31'...
+fatal: 'C:\xampp\htdocs\ft31.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+
+F:\>git clone C:\xampp\htdocs\ft31
+Cloning into 'ft31'...
+done.
+
