@@ -1,19 +1,11 @@
 = Historie der GIT-Vorgänge =
 
-Dieses Verzeichnis wurde aus FT31Lobby C:\XAMPP\HTDOCS\ft31 aus dem dort angelegten Repository geklont.
+Das Verzeichnis auf dem blauen USB-Laufwerk (Netzlaufwerk F:\FT31) wurde aus FT31Lobby C:\XAMPP\HTDOCS\ft31 aus dem dort angelegten Repository geklont.
 
 Microsoft Windows [Version 10.0.16299.125]
 (c) 2017 Microsoft Corporation. Alle Rechte vorbehalten.
 
-C:\Users\Carsten>cd..
-
-C:\Users>cd..
-
-C:\>cd XAMPP
-
-C:\xampp>cd htdocs
-
-C:\xampp\htdocs>cd ft31
+== Status abfragen - noch nichts passiert ==
 
 C:\xampp\htdocs\ft31>git status
 On branch master
@@ -21,17 +13,69 @@ Your branch is up to date with 'origin/master'.
 
 nothing to commit, working tree clean
 
-C:\xampp\htdocs\ft31>.bowerrc
-
-C:\xampp\htdocs\ft31>F:
-
-F:\>git clone C:\xampp\htdocs\ft31.git
-Cloning into 'ft31'...
-fatal: 'C:\xampp\htdocs\ft31.git' does not appear to be a git repository
-fatal: Could not read from remote repository.
-
+== Repository auf Laufwerk F klonen ==
 
 F:\>git clone C:\xampp\htdocs\ft31
 Cloning into 'ft31'...
 done.
+
+== Datei auf F:\FT31 hinzugefügt und geändert ==
+
+* Diese Datei wurde nun dem Repository mit <add> hinzugefügt und anschließend mit <commit> Teil der "Fetch-Area" - also zum Verteilen freigegeben.
+* Erst dann kann man pushen (nur bei bare repositories) oder vom "Stamm-Repository" pullen
+* allerdings nur dann, wenn man dort F:\FT31 zvor als neuen remote angelegt hat
+
+=== Prüfen, welche Remote-Repos es gibt===
+
+C:\xampp\htdocs\ft31>git remote
+origin
+
+=== mit -v prüfen, wo diese Remote Repostirories liegen ===
+
+C:\xampp\htdocs\ft31>git remote -v
+origin  https://CarstenB2@github.com/carstenB2/ft31.git (fetch)
+origin  https://CarstenB2@github.com/carstenB2/ft31.git (push)
+origin  https://CarstenB2@github.com/carstenB2/CavailleColl.git (push)
+
+=== Neues Remote-Repo anlegen ===
+
+C:\xampp\htdocs\ft31>git remote add blau F:\ft31
+
+=== Prüfen, ob das neue Remote-Repo angelegt worden ist ===
+
+C:\xampp\htdocs\ft31>git remote -v
+blau    F:\ft31 (fetch)
+blau    F:\ft31 (push)
+origin  https://CarstenB2@github.com/carstenB2/ft31.git (fetch)
+origin  https://CarstenB2@github.com/carstenB2/ft31.git (push)
+origin  https://CarstenB2@github.com/carstenB2/CavailleColl.git (push)
+
+=== Fetch-Befehl-Versuch - erstmal ohne Erfolg ===
+
+C:\xampp\htdocs\ft31>git fetch blau
+From F:\ft31
+ * [new branch]      master     -> blau/master
+
+C:\xampp\htdocs\ft31>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+=== Pull ist das Mittel der Wahl ===
+
+C:\xampp\htdocs\ft31>git pull blau master
+From F:\ft31
+ * branch            master     -> FETCH_HEAD
+Updating dba3d66..a13533e
+Fast-forward
+ HistoryGITBefehle.txt | 37 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 37 insertions(+)
+ create mode 100644 HistoryGITBefehle.txt
+
+C:\xampp\htdocs\ft31>
+
+== Datei wurde auf BLAU geändert und muss nun mit <add> und <commit> neu für die Verteilung freigegeben werden ==
+
+
 
