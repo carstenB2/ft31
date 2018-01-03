@@ -77,5 +77,27 @@ C:\xampp\htdocs\ft31>
 
 == Datei wurde auf BLAU geändert und muss nun mit <add> und <commit> neu für die Verteilung freigegeben werden ==
 
+F:\ft31>git commit -m "Erklärung wie man erfolgreich auf einem USB-Laufwerk eine Datei ändert und erfolgreich pullt / fetcht"
+
+[master 1044502] Erklärung wie man erfolgreich auf einem USB-Laufwerk eine Datei ändert und erfolgreich pullt / fetcht
+ 1 file changed, 59 insertions(+), 15 deletions(-)
+
+== Nun noch auf dem "Stamm-Repository" einen Pull-Befehl ausführen... ==
+
+C:\xampp\htdocs\ft31>git pull blau master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From F:\ft31
+ * branch            master     -> FETCH_HEAD
+   a13533e..1044502  master     -> blau/master
+Updating a13533e..1044502
+Fast-forward
+ HistoryGITBefehle.txt | 74 ++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 59 insertions(+), 15 deletions(-)
+
+
+
 
 
