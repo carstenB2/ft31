@@ -77,6 +77,12 @@ C:\xampp\htdocs\ft31>
 
 == Datei wurde auf BLAU geändert und muss nun mit <add> und <commit> neu für die Verteilung freigegeben werden ==
 
+* So wird in einem Rutsch alles hinzugefügt, was geändert worden ist
+
+F:\ft31>git add .
+
+* Nun committen
+
 F:\ft31>git commit -m "Erklärung wie man erfolgreich auf einem USB-Laufwerk eine Datei ändert und erfolgreich pullt / fetcht"
 
 [master 1044502] Erklärung wie man erfolgreich auf einem USB-Laufwerk eine Datei ändert und erfolgreich pullt / fetcht
