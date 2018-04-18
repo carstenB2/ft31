@@ -13,7 +13,7 @@ and open the template in the editor.
 /* Grundschriftart für alles auf dieser Seite */
 html {
     font-family: 'Roboto', sans-serif;
-    font-size: 62.5%; //Grundgröße (siehe Schrödinger 2016, S. 142. Browsergrundgröße ist gemeinhin 16px, macht hier also 10px)
+    font-size: 62.5%; /*Grundgröße (siehe Schrödinger 2016, S. 142. Browsergrundgröße ist gemeinhin 16px, macht hier also 10px)
 }
 
 /* Klassen */

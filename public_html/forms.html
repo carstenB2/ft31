@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Tabellen</title>
+        <title>Formulare</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Fontface, der Einfachheit haber zunächst mit Einbettung von Google api -->
@@ -14,6 +14,12 @@ and open the template in the editor.
         <link href="ft31styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <p>
+            Dieses Kapitel teilt sich in mehrere Teile. Aus tierischen Gründen wurde zwar engagiert angefangen, dann aber aus tierischen
+            Gründen eine ganze Weile nicht weitergemacht. Das Kapitel "Grundlagen" wurde Ende November erstellt - dann kam der Hund - 
+            das Kapitel "Fortgeschrittene Elemente" folgte dann Mitte-/Ende März (!).
+        </p>
+        <h1>Grundlagen</h1>
         <div>Formulare --> Schrödinger 2016, S. 210ff</div>
         <p>Damit das funktioniert, müssen die Sourcen von den Schrödingr
             Buchbeispielen vorhanden sein. In deiesem Übungsprojekt wurde das Unterverzeichnis <code>
@@ -26,7 +32,7 @@ and open the template in the editor.
             <code>form action="http://localhost:8080/ft31/public_html/forms/hallowelt.php" method="get" accept-charset="utf-8"</code>
         </p>
         <p>
-            Danach kommt alles, wie es kommen musss wie auf SSchrödinger 2016 audf S. 312ff beschrieben.
+            Danach kommt alles, wie es kommen musss wie auf Schrödinger 2016 audf S. 312ff beschrieben.
             Zu beachten ist allerdings, dass im speziellen FT31-Fall hier "action" die komplette
             URL einzugeben ist, also:
         </p>
@@ -38,20 +44,144 @@ and open the template in the editor.
         </ul>
         
                 
-       
+        <h1>Grundlegende Elemente</h1>
         
         <p>    
-            Und los geht's
+            Und los geht's. Labels snd wie bei Delphi Container für andere Elemente. Diese erhalten dann als ID (verknüpfender Parameter)
+            den Namen des Labels
         </p>
         <form action="http://localhost:8080/ft31/public_html/forms/hallowelt.php" method="get" accept-charset="utf-8">
             <ul class="Formularliste">
                 <li><label for="name">Namen eingeben</label></li>
                 <li><input type="text" name="name" id='name' placeholder="Name"></li>
                 <li><input type="text" name="nachname" placeholder="Nachname"></li>
-                <li><input type="text" name="spitzname" placeholder="Spitzname"></li>
-                <li><button>Abschicken</button></li>
-                <li><button type="reset"> Formular leeren</button></li>
+               
             </ul>
+            <p>
+                Hier nun Radio-Buttons und eine Checkbox und eine Checkbox (Selectbox). <code>multiple</code> macht Mehrfachauswahl möglich.
+            </p>
+                <ul class="Formularliste">
+                    <li><label for="geschlecht_m">männlich</label></li>
+                    <li><input type="radio" name="geschlecht" value="m" id="geschlecht_m" checked="cehecked"></li>
+                    <li><label for="geschlecht_w">weiblich</label></li>
+                    <li><input type="radio" name="geschlecht" value="w" id="geschlecht_w"></li>
+                    <li><label for="extraschleim">mit Extraschleim></label></li>
+                    <li><input type="checkbox" name="extraschleim" value="an" ID="extraschleim"></li>
+                    <li>Selectorbox</li>
+                    <li><select name="zusatz[]" multiple size="5"> 
+                            <optgroup label="The Good>">
+                                <option value="intelligent" selected>intelligent</option> 
+                                <option value="gutaussehend">gutaussehend</option>
+                            </optgroup>
+                            <optgroup label="The Bad">
+                                <option value="nach Käse riechend">nach Käse riechend</option>
+                                <option value="langwelig">langweilig</option>
+                            </optgroup>
+                            <optgroup label="And the Creepy">
+                                <option value="wohlgeformt">wohlgeformt</option>
+                                <option value="schmackhaft">schmackhaft</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li><input type="text" name="spitzname" placeholder="Spitzname" value="Otto"></li>
+                    <li><button>Abschicken</button></li>
+                    <li><button type="reset"> Formular leeren</button></li>
+                    <li>Datalist: Hier muss erst ein Textfeld mit Parameter list=[ID de Datalist] erstellt werden. Diese muss dann mit <code>datalist</code> erstellt werden></li>
+                    <li>
+                        <input type="text" list="adjektive" name="zusatz[]">
+                        <datalist id="adjektive">
+                            <option value="intelligent">
+                            <option value="gutaussehend">
+                        </datalist>
+                        
+                    </li>
+                        
+                </ul>
             
-        </form>   
+        </form>
+        <h1>Fortgeschrittene Elemente</h1>
+        <p>22.03.2018: Es folgt zunächst eine Zusammenfassung dessen, was neu hinzugekommen ist</p>
+        <h2>Zusammenfassung</h2>
+        <h3>Forms</h3>
+        <p>Hinter dem eigentlichen Formular liegt das Script <code>stapelsuche.php</code>
+            <a href="forms/stapelsuche.php">... zu finden hier</a>
+            Das gesamte Script befindet sich in: 
+            <a href="../Sourcen/Downloads/Beispiele/Kapitel 6/Beispiel_6_8.html">Beispiel_6_8</a>
+        </p>
+        <h4>Neu hinzugekommene Elemente</h4>
+        <ul>
+            <li>Verstecktese Feld, um Informationen an den Server zu übermitteln, die der Benutzer nicht sehen soll (S. 237)</li>
+            <li><code>Textarea</code> für die Eingabe mehrzeiligen Texts (S. 238f)</li>
+            <li>
+                Liste neuer Eingabefelder wie z.B. "email", "datetime-local", "search", "required", mit dene sich die Übertragung
+                ungültiger Informationen verhindern und mit Hilfe von Pseudoklassen (z.B. :required, :invalid, :disaled, :readonly,
+                :focus), siehe S. 241ff, Beispiel: S. 250) und hier (Beispiele 6_10ff)
+                <a href="../Sourcen/Downloads/Beispiele/index.html"></a>
+            </li>
+            <li>
+                Dateien hochladen. Geht ganz einfach (S. 252ff) Ein Beispiel, wie das Downloaden funktioniert, 
+                wäre natürlich auch nett. Siehe Beispiele 
+                <a href="../Sourcen/Downloads/Beispiele/Kapitel 6/Beispiel_6_15.html">Holzklasse</a>
+                <a href="../Sourcen/Downloads/Beispiele/Kapitel 6/Beispiel_6_16.html">schön bunt</a>
+            </li>
+        </ul>
+        <<h2>Selbst gemachte Beispiele</h2>
+        <p>
+            Hier einige ausgewählte Beispiele, um die grundsätzliche Vorgehensweise zu demonstrieren. Für feinheiten sei auf der Beispielverzeichnis verwiesen.
+        </p>
+        <form name="stapelsuche" action="http://localhost:8080/ft31/public_html/forms/stapelsuche.php" method="get">
+            <label for="term">suchwort</label>
+            <input type="text" name="suchwort"  id="term" placeholder="Wonach wird gesucht">
+            <fieldset>
+                <legend>Kategorie</legend>
+                <label for="Kategorie_Kisten">Kisten</label>
+                <input type="radio" name="kategorie" value="kisten" id="Kategorie_Kisten">
+                <br>
+                <label for="Kategorie_Flaschen">Flaschen</label>
+                <input type="radio" name="kategorie" value="flaschen" id="Kategorie_Flaschen">
+                <br>
+                <label for="Kategorie_Sonstige">Sonstige</label>
+                <input type="radio" name="kategorie" value="sonstige" id="Kategorie_Sonstige">
+                <br>
+                <label for="Kategorie_Alle">Alle</label>
+                <input type="radio" name="kategorie" value="alle" id="Kategorie_Alle" checked="checked">
+            </fieldset>
+            
+            <label for="NotInStock">Nicht im Lager</label>
+            <input type="checkbox" name="outofstock" vslue="ja" id="NotInStock" checked="checked">
+            
+            <fieldset>
+                <legend>
+                    Format
+                </legend>
+                <label for="Format">Tabelle</label>
+                <input type="radio" name="format" value="tabelle" checked="checked" id="Format">
+            </fieldset>
+            
+            <button>Suchen</button>
+                
+        </form>
+        <h1>Dateien hochladen</h1>
+        22.03.2018
+        <p>
+            Das ist mit einer Zeile Code erledigt.
+        </p>
+        <form method="post" enctype="multipart/form-data">
+            <label for="FileUpload">Datei hochladen</label>
+            <input type="file" name="file" id="FileUpload">
+        </form>
+        <p>
+            Allerdings passiert im Beispiel erst mal gar nichts, da PHP-seitig kein Code hinterlegt worden ist.
+        </p>
+        <h1>Weiterführende Links</h1>
+        <ol>
+            <li>Zum Response-Modell aka. Client-Server-Modell: <a href="https://de.wikipedia.org/wiki/Client-Server-Modell" target="_blank">Wikipedia-Artikel Client-Server-Modell</a></li>
+            <li>
+                Was sind eigentlich void-Elemente. Übersetzt heißt das "Leerstelle", in vielen Programmiersprachen und HTML und Javascript sind das
+                beispielsweise Tags, die nicht explizit geschlossen werden müssen. 
+                Siehe: <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element" target="_blank">MDN-Artikel "Elemente"</a>
+            </li>
+        </ol>
+            
+    </body>
 </html>
