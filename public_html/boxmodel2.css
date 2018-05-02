@@ -1,0 +1,153 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19.04.2018, 16:56:52
+    Author     : Carsten
+*/
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.2em;
+    
+}
+
+/*Teil 1 des Beispielteils*/
+
+#BoxEins {
+    background-color: red;
+    font-size: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px;
+    
+}
+
+#BoxZwei {
+    height: 50px;
+    background-color: yellow;
+    overflow: scroll;
+    padding: 5px 10px;
+    border: 3px;
+    margin-bottom: 5px;
+    
+}
+
+#BoxDrei {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    overflow: hidden;
+    padding: 5px 10px 3px 15px;
+    border: 3px;
+    margin-bottom: 5px;
+    position: absolute;
+}
+
+#BoxVier {
+    width: 20%;
+    height: 10%;
+    background-color: lightblue;
+    overflow: scroll;
+    padding: 5% 5%;
+    border: 3px;
+    margin: 5px auto;
+}
+
+#BoxFünf {
+    width: 20em;
+    height: 10em;
+    background-color: pink;
+    overflow: auto;
+    margin-bottom: 5px;
+}
+
+/*Teil 2 des Beispielteils*/
+
+#Kiste1  {
+    width: 124px;
+    height: 187px;
+    background-color: red;
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Kiste2  {
+    width: 121px;
+    height: 42px;
+    background-color: yellow;
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 124px;
+}
+
+#Kiste3  {
+    width: 121px;
+    height: 100px;
+    background-color: pink;
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 42px;
+    left: 124px;
+}
+#Kiste4  {
+    width: 121px;
+    height: 100px;    
+    background-color: lightblue;
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 142px;
+    left: 124px;
+}
+
+#Kiste5  {
+    width: 124px;
+    height: 55px;    
+    background-color: lightcyan;
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 187px;
+    left: 0;
+}
+
+#Kiste6  {
+    width: 166px;
+    height: 55px;
+    background-color: lightgreen;
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 242px;
+    left: 0;
+    
+}
+
+#Kiste7  {
+    width: 79px;
+    height: 55px;    
+    background-color: lightgray;
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 242px;
+    left: 166px;
+}
+
+
+
+

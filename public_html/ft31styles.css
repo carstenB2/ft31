@@ -18,140 +18,134 @@ html {
 
 /* Klassen */
 
-.gelbhinterlegt {
-    color: #5b5a59; 
-    background-color: yellow;
-}
+    .gelbhinterlegt {
+        color: #5b5a59; 
+        background-color: yellow;
+    }
 
-.kommentar {
-    color: #5a5a5a;
-}
+    .kommentar {
+        color: #5a5a5a;
+    }
 
-.ubuntu {
-    font-family: 'Ubuntu'; /*Klasse als Formatvorlage. Siehe unten "gleiche" ID*/
-}
+    .ubuntu {
+        font-family: 'Ubuntu'; /*Klasse als Formatvorlage. Siehe unten "gleiche" ID*/
+    }
 
-.TransparenterKasten {
-    background-color: rgba(255,155,0,0.5);
-    color: #ff0000;
-    border-color: #1a0aff;       
-}
-/*Farbenspiele (Schrödinger S. 115))*/
-.haloween {
-    background-image: url(images/oralauf2.png);
-    background-repeat: repeat-Y;
-} 
-.WeisseSchriftTransparent {
-    color: #ffffff;
-    background-color:rgba(255, 255, 255, 0.5);
-    font-size: 20px;       
-}
+    .TransparenterKasten {
+        background-color: rgba(255,155,0,0.5);
+        color: #ff0000;
+        border-color: #1a0aff;       
+    }
+    /*Farbenspiele (Schrödinger S. 115))*/
+    .haloween {
+        background-image: url(images/oralauf2.png);
+        background-repeat: repeat-Y;
+    } 
+    .WeisseSchriftTransparent {
+        color: #ffffff;
+        background-color:rgba(255, 255, 255, 0.5);
+        font-size: 20px;       
+    }
 
-/*Marodierende Bilder (Schrödinger 2016, S. 121ff)*/
+    /*Marodierende Bilder (Schrödinger 2016, S. 121ff)*/
 
-.MarodierendeBilder {
-    background-color: grey;
-    background-image: url(images/schwellwerk.png);
-    /*background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;*/
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   }
-   .MarodierendeBilderInEins {
-       background: gray url(images/schwellwerk.png) no-repeat fixed center top;
-   }
-   
-/*Pixel, Punkt und EM (Schrödinger 2016, S. 138ff)*/
-.EtwasGrösserAlsDasAndere {
-    font-size: 1.2em;
-}
+    .MarodierendeBilder {
+        background-color: grey;
+        background-image: url(images/schwellwerk.png);
+        /*background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;*/
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .MarodierendeBilderInEins {
+        background: gray url(images/schwellwerk.png) no-repeat fixed center top;
+    }
 
-/*Nachfahrenselektoren (Schrödinger 2016, S. 143ff)*/
+    /*Pixel, Punkt und EM (Schrödinger 2016, S. 138ff)*/
+    .EtwasGrösserAlsDasAndere {
+        font-size: 1.2em;
+    }
 
- h2 .EtwasGrösserAlsDasAndere { 
-    font-weight: bold;
-    font-style: italic;
-}
+    /*Nachfahrenselektoren (Schrödinger 2016, S. 143ff)*/
 
-p > span {
-    font-family: Helvetica;
-    font-style: italic; 
-    color: red;
-}
+    h2 .EtwasGrösserAlsDasAndere { 
+        font-weight: bold;
+        font-style: italic;
+    }
 
-h2 + p {
-    font-size: 2em;
-    font-weight: bolder;
-    color: blue;
-}
+    p > span {
+        font-family: Helvetica;
+        font-style: italic; 
+        color: red;
+    }
 
-h2 ~ em {
-    font-size: 3em;
-        
-}
+    h2 + p {
+        font-size: 2em;
+        font-weight: bolder;
+        color: blue;
+    }
 
-/*Listen, römisch, katholisch, rückwärtsgewandt, nicht bei eins anfangen*/
+    h2 ~ em {
+        font-size: 3em;
 
-ol.roemisch {
-    list-style-type: upper-roman;
-}
-ol.roemisch > ol > li {
-    list-style-type: lower-roman;
-}
+    }
 
-/*Tabellenregeln*/
-table {
-    border-collapse: collapse;
-}
-spalte1 {
-    text-align: right;
-    width: 100px;
-}
+    /*Listen, römisch, katholisch, rückwärtsgewandt, nicht bei eins anfangen*/
 
-spalte2, spalte3  {
-    width: 200px;
-}
+    ol.roemisch {
+        list-style-type: upper-roman;
+    }
+    ol.roemisch > ol > li {
+        list-style-type: lower-roman;
+    }
 
-spalte4 {
-    width: 400px;
-}
+    /*Tabellenregeln*/
+    table {
+        border-collapse: collapse;
+    }
+    spalte1 {
+        text-align: right;
+        width: 100px;
+    }
 
-tr {
-    border: 2px solid black;
-}
-thead tr {
-    font-weight: bold;
-    border-bottom: 2px solid red;
-}
+    spalte2, spalte3  {
+        width: 200px;
+    }
 
-tfoot td{
-    text-align: center;
-}
+    spalte4 {
+        width: 400px;
+    }
 
-td {
-    border-top: 1px solid #000000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    
-}
+    tr {
+        border: 2px solid black;
+    }
+    thead tr {
+        font-weight: bold;
+        border-bottom: 2px solid red;
+    }
 
-tr:nth-child(even) {
-    background-color: #c8c8c8
-}
+    tfoot td{
+        text-align: center;
+    }
 
-tr:nth-child(odd) {
-    background-color: #fafafa
-}
-/* Formulare */
+    td {
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
 
-.Formularliste li {
-    list-style-type: none;
-}
-/* Ids - dürfen auf der Seite nur einmal vorkommen */
+    tr:nth-child(even) {
+        background-color: #c8c8c8
+    }
 
-#ubuntu {
-    font-family: 'Ubuntu', sans-serif;
-}
+    tr:nth-child(odd) {
+        background-color: #fafafa
+    }
+    /* Formulare */
+
+    .Formularliste li {
+        list-style-type: none;
+    }
